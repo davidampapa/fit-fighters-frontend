@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Fit Fighters Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Fit Fighters Frontend** project! This is the frontend interface for the Fit Fighters management platform.
 
-## Available Scripts
+It complements the backend system that manages fighters and matches. This frontend offers a user-friendly view of fighters, upcoming fights, and event details.
 
-In the project directory, you can run:
+### ⚠️ Project Status
 
-### `npm start`
+This project is **currently under active development** and not yet fully functional.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The **backend** is complete and fully operational.
+- The **frontend** is still being developed — some features are incomplete or missing:
+  - The **"Places" page is not implemented yet**.
+  - Minor UI bugs may be present.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Functionality is missing **only on the frontend side**. The backend API is fully functional and ready for use.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View list of fighters and their stats
+- Browse scheduled and past fights
+- Responsive UI compatible with both desktop and mobile
+- Simple integration with backend REST API
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Framework:** React
+- **Styling:** CSS / SCSS
+- **API Communication:** Fetch API / Axios
+- **Deployment-ready:** Dockerized build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started (Development)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the main repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/davidampapa/fit-fighters-frontend.git
+cd fit-fighters-frontend
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies:**
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Start the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+> The app will be available at [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🐳 Dockerized Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+When running via Docker:
 
-### Making a Progressive Web App
+```bash
+docker build -t fit-fighters-frontend ./fit-fighters-frontend
+docker run -p 3000:80 fit-fighters-frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Frontend will be accessible at:
 
-### Advanced Configuration
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🗂️ Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+fit-fighters-frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/    # API requests
+│   ├── assets/
+│   └── App.jsx
+├── Dockerfile
+└── package.json
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+
+For any questions or issues, open an issue on GitHub or contact the maintainers.
