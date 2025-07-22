@@ -84,10 +84,9 @@ http://localhost:3000
 fit-fighters-frontend/
 ├── public/
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/    # API requests
-│   ├── assets/
+│   ├── controllers/
+│   ├── layouts/
+│   ├── pages/    # API requests
 │   └── App.jsx
 ├── Dockerfile
 └── package.json
