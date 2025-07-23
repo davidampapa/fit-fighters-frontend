@@ -9,9 +9,9 @@ It complements the backend system that manages fighters and matches. This fronte
 This project is **currently under active development** and not yet fully functional.
 
 - The **backend** is complete and fully operational.
-- The **frontend** is still being developed — some features are incomplete or missing:
-  - The **"Places" page is not implemented yet**.
+- The **frontend** is still being developed — some features are incomplete:
   - Minor UI bugs may be present.
+  - Add pages for fights and places doesent work
 
 > Functionality is missing **only on the frontend side**. The backend API is fully functional and ready for use.
 ---

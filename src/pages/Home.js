@@ -59,6 +59,12 @@ export default function Home() {
                 <td>{fighter.loseCount}</td>
                 <td>
                   <Link
+                      className="btn btn-outline-primary mx-2"
+                      to={`/viewfighter/${fighter._links.self.href.split('/').slice(-1)[0]}`}
+                  >
+                      View
+                  </Link>
+                  <Link
                     className="btn btn-outline-primary mx-2"
                     to={`/editfighter/${fighter._links.self.href.split('/').slice(-1)[0]}`}
                   >
