@@ -12,6 +12,8 @@ import EditPlace from './controllers/places/EditPlace';
 import ViewPlace from './controllers/places/ViewPlace';
 import ViewFighter from './controllers/fighters/ViewFighter';
 import ViewFight from './controllers/fights/ViewFight';
+import AddPlace from './controllers/places/AddPlace';
+import AddFight from './controllers/fights/AddFight';
 
 function App() {
   return (
@@ -30,7 +32,8 @@ function App() {
           <Route exact path="/viewplace/:id" element={<ViewPlace />} />
           <Route exact path="/viewfighter/:id" element={<ViewFighter />} />
           <Route exact path="/viewfight/:id" element={<ViewFight />} />
-
+          <Route exact path="/addplace" element={<AddPlace />} />
+          <Route exact path="/addfight" element={<AddFight />} />
         </Routes>
       </Router>
     </div>

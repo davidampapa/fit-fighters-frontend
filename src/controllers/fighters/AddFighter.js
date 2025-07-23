@@ -10,10 +10,10 @@ export default function AddFighter() {
     firstName: "",
     lastName: "",
     weightDivision: "",
-    age: "",
-    winCount: "",
-    loseCount: "",
-    drawCount: "",
+    age: 0,
+    winCount: 0,
+    loseCount: 0,
+    drawCount: 0,
   });
 
   const {

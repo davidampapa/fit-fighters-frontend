@@ -1,8 +1,31 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../App.css'; // Importujte styl
+import { NavLink, useLocation } from 'react-router-dom';
+import '../App.css';
 
 export default function Navbar() {
+  const location = useLocation();
+
+  let actionButton = null;
+  if (location.pathname.startsWith('/fighters')) {
+    actionButton = (
+      <NavLink className="btn btn-success ml-auto" to="/addfighter">
+        Add Fighter
+      </NavLink>
+    );
+  } else if (location.pathname.startsWith('/fights')) {
+    actionButton = (
+      <NavLink className="btn btn-success ml-auto" to="/addfight">
+        Add Fight
+      </NavLink>
+    );
+  } else if (location.pathname.startsWith('/places')) {
+    actionButton = (
+      <NavLink className="btn btn-success ml-auto" to="/addplace">
+        Add Place
+      </NavLink>
+    );
+  }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -23,7 +46,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <NavLink exact className="btn btn-success ml-auto" to="/addfighter">Add Fighter</NavLink>
+        {actionButton}
       </div>
     </nav>
   );
